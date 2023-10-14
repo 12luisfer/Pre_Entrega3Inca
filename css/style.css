@@ -473,6 +473,31 @@ span {
   border-radius: 10px;
 }
 
+/* seccion contacto */
+.info-container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+.info-column h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.icon-info {
+  font-size: 1.1rem;
+}
+
+/* mapa */
+.mapa iframe {
+  height: 200px;
+}
+
 /*footer*/
 .footer {
   width: 100%;
@@ -955,31 +980,6 @@ span {
     margin-top: 20px;
   }
 }
-/* seccion contacto */
-.info-container h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  margin: 15px;
-}
-
-.info-column h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-}
-
-.icon-info {
-  font-size: 1.1rem;
-}
-
-/* mapa */
-.mapa iframe {
-  height: 200px;
-}
-
 /*login y registrase*/
 .body_login {
   font-family: "Chakra Petch", sans-serif;

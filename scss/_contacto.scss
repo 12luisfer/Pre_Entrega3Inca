@@ -1,0 +1,96 @@
+/* Contacto */
+#Contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    max-width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 0px;
+  }
+  
+  #Contact h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-top: 150px;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .contact-info-container {    /*contenedor de todo mi info, menos el "contacto(H1)"*/
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .info-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .info-column p,
+  .info-column a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: chartreuse;
+    margin-bottom: 15px;
+  }
+  
+  .icon-info {
+    font-size: 1.87rem;
+    text-decoration: none;
+    color: chartreuse;
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  
+  .mapa {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+  }
+  .mapa iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+  }
+
+  /* seccion contacto */
+
+.info-container h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 15px;
+  }
+  
+  .info-column h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .icon-info {
+    font-size: 1.1rem;
+  }
+  /* mapa */
+  .mapa iframe {
+    height: 200px;
+  }
