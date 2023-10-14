@@ -10,7 +10,7 @@
 
 body {
   font-family: "Monomaniac One", sans-serif;
-  background: url(../backgrounds/background-index.png);
+  background: url(../assets/backgrounds/background-index.png);
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
@@ -96,10 +96,10 @@ body {
   width: 300vh;
   z-index: 1;
   background: rgb(0, 0, 0, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0, 37);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: none;
+  
 }
 
 
@@ -1024,16 +1024,12 @@ span {
   height: 200px;
 }
 
-
-
-
-
                     /*login y registrase*/
 
 .body_login {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  background: url(../backgrounds/background-login.png);
+  background: url(../assets/backgrounds/background-login.png);
   background-size: cover;
   background-attachment: fixed;
 }
