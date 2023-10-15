@@ -1,16 +1,16 @@
-@import'generales';
-@import'header';
-@import'inicio';
-@import'acerca';
-@import'productos';
-@import'soporte';
-@import'contacto';
-@import'footer';
-@import'menu-hamburguesa' ;
-@import'carrito';
-@import'animacion';
+@import'base/generales';
+@import'layout/header';
+@import'views/inicio';
+@import'views/acerca';
+@import'views/productos';
+@import'views/soporte';
+@import'views/contacto';
+@import'layout/footer';
+@import'components/menu-hamburguesa' ;
+@import'components/carrito';
+@import'components/animacion';
 @import'mediaqueries';
-@import'login-register';
+@import'views/login-register';
 @import'mediaqueries-login-register';
 
 

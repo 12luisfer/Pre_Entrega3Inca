@@ -1,0 +1,142 @@
+/*  Productos */
+#Products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    .title-products-cont {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      .products-title {
+        font-size: 2.25rem;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        
+      }
+    }
+  }
+  .categorias {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.25rem;
+    h2 {
+      font-size: 2.25rem;
+      background-color: transparent;
+      color: orangered;
+      text-align: center;
+      margin: 40px;
+      
+    }
+  }
+
+  .categorias-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+    a {
+      font-size: 1.25rem; 
+      display: inline-block;
+      padding: 10px;
+      background-color: #000;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  #Mother,
+  #Micros,
+  #Cooler,
+  #Ram,
+  #Discos,
+  #Psu,
+  #Torres,
+  #Vga,
+  #Screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    .title-cont {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.87rem;
+      font-weight: 800;
+      background-color: transparent;
+      color: #fff;
+    }
+    .products-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 80px;
+        gap: 10px;
+        max-width: 20rem;
+        background-color: transparent;
+        .card-img {
+          max-width: 18.75rem;
+        }
+        .card-title {
+          background-color: transparent;
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: #fff;
+        }
+        .card-text {
+          background-color: transparent;
+          text-align: center;
+          font-size: 1.37rem;
+          color: #fff;
+        }
+        span {
+          background-color: transparent;
+          text-align: center;
+          font-size: 1.37rem;
+          font-weight: 800;
+          color: chartreuse;
+        }
+        .card-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 1.87rem;
+          background-color: orangered;
+          color: #fff;
+          cursor: pointer;
+          border: 1px solid #fff;
+          border-radius: 8px;
+          box-shadow: 2px 2px 2px 1px rgba(235, 227, 227, 0.7);
+          margin: 15px 15px;
+          padding: 5px 5px;
+        }
+      }
+      
+    }
+  }
+
+

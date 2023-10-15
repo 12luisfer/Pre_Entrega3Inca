@@ -1,5 +1,4 @@
                                     /*HEADER*/
-
 /*header/navegador*/
 .header {
     position: fixed;
@@ -9,55 +8,45 @@
     justify-content: space-between;
     align-items: center;
     background-color: #000000e6;
+    .logo {
+      width: 11.25rem;
+      height: 9.37rem;
+    }
+    .navbar {           /*navegador de la tienda/ el contenedor */
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito", sans-serif;
+      .navbar-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        gap: 15px;
+      .link a {                 /*links de mi navegador color*/
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #7fff00;
+      text-align: center;
+    }
+      }
+    }
   }
-  /*mi logo img tamaño*/
-  .logo {
-    width: 11.25rem;
-    height: 9.37rem;
-  }
-  /*navegador de la tienda/ el contenedor */
-  .navbar {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Nunito", sans-serif;
-  }
-  
-  .navbar-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    gap: 15px;
-  }
-  
-  .icon-nav {
-    font-size: 1.87rem;
-    text-align: center;
-    color: deepskyblue;
-  }
-  /*links de mi navegador color*/
-  .link a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: chartreuse;
-    text-align: center;
-  }
-  
   .btn {
     background-color: transparent;
     font-size: 1.5rem;
     font-weight: bold;
     color: chartreuse;
     margin: 0 15px;
+    
   }
-  
   /*mi login estilo del link*/
   .login {
     font-size: 1.56rem;
     color: chartreuse;
     background-color: transparent;
+    text-decoration: none;
   }
   /*mis iconos de carrito y login(la personita)*/
   .icon {
@@ -67,7 +56,6 @@
     font-size: 1.56rem;
     cursor: pointer;
   }
-  
   /* efecto blur de mi menu hamburguesa, las secciones */
   .overlay {
     position: absolute;
@@ -80,15 +68,11 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     display: none;
-    
   }
-  
-  
   /*mi menu de hamburguesa img*/
   #menu-toggle:checked ~ .overlay {
     display: block;
   }
-  
   #cart-toggle:checked ~ .overlay {
     display: block;
   }
