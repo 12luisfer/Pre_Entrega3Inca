@@ -1,4 +1,4 @@
-                                    /*HEADER*/
+                                /*HEADER*/
 /*header/navegador*/
 .header {
     position: fixed;
@@ -28,7 +28,6 @@
       }
     }
   }
-
   .cont-btn{
     background-color:map-get($colores,sextario);
     .login { /*mi login estilo del link*/
@@ -45,7 +44,6 @@
     font-size: 1.56rem;
     cursor: pointer;
   }
-
   /* efecto blur de mi menu hamburguesa, las secciones */
   .overlay {
     position: absolute;

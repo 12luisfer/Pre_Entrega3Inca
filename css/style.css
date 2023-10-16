@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*color tipografia contenidos*/
-/*color de mis iconos/todos*/
-/*bordes decontenido*/
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
 #Service .cont-services .cont-service .icon-service, #Service .cont-services .cont-service .service-btn, #Mother .products-container .card .card-btn,
 #Micros .products-container .card .card-btn,
@@ -56,7 +53,6 @@
 body {
   background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   background-size: cover;
-  background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -935,6 +931,7 @@ body {
   .icon {
     font-size: 1rem;
     padding: 5px;
+    margin: 0 30px;
   }
   /* seccion hero o portada */
   .hero-title {
