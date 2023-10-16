@@ -7,7 +7,7 @@
   background-attachment: fixed;
   }
 .header_login {         /*boton "volver"*/      
-  width: 100%;
+  width: map-get($porcentajes,fase10);
   @include flex(flex,space-between,center);
   position: fixed;
   margin-top: 1.12rem;
@@ -21,7 +21,7 @@
       margin-top: 24px;
       border: 2px solid map-get($colores,login-registro);
       box-shadow: 0 10px 20px 0 map-get($colores,quinario);
-      text-decoration: none;
+      text-decoration: $decoracion;
       font-size: 1.37rem;
       font-weight: bold;
       color: map-get($colores,quinario);
@@ -30,7 +30,7 @@
   }
   /*todo el formulario*/
   .form {  
-    max-width: 100%;
+    max-width: map-get($porcentajes,fase10);
     position: relative;
     top: 16.12rem;
     @include flex(flex,center,center);
@@ -60,7 +60,7 @@
           text-align: center;
           max-width: 100%;
           padding: 5px;
-          border: none;
+          border:$decoracion;
           }
       }
       }

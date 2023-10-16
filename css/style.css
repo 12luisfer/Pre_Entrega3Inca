@@ -2,9 +2,49 @@
 /*color tipografia contenidos*/
 /*color de mis iconos/todos*/
 /*bordes decontenido*/
-/*map-get($colores,secundario)*/
-/*      @include flex(flex,center,center);*/
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
+#Service .cont-services .cont-service .icon-service, #Service .cont-services .cont-service .service-btn, #Mother .products-container .card .card-btn,
+#Micros .products-container .card .card-btn,
+#Cooler .products-container .card .card-btn,
+#Ram .products-container .card .card-btn,
+#Discos .products-container .card .card-btn,
+#Psu .products-container .card .card-btn,
+#Torres .products-container .card .card-btn,
+#Vga .products-container .card .card-btn,
+#Screen .products-container .card .card-btn, #Mother .products-container .card,
+#Micros .products-container .card,
+#Cooler .products-container .card,
+#Ram .products-container .card,
+#Discos .products-container .card,
+#Psu .products-container .card,
+#Torres .products-container .card,
+#Vga .products-container .card,
+#Screen .products-container .card, #Mother .products-container,
+#Micros .products-container,
+#Cooler .products-container,
+#Ram .products-container,
+#Discos .products-container,
+#Psu .products-container,
+#Torres .products-container,
+#Vga .products-container,
+#Screen .products-container, .categorias-container, .categorias, #Products .title-products-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Contact .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Contact .info-container .contact-info-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Reset de estilos */
 * {
   margin: 0;
@@ -14,7 +54,7 @@
 }
 
 body {
-  background: url(../assets/backgrounds/background-index.png);
+  background: url(../../assets/backgrounds/background-index.webp);
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
@@ -125,10 +165,10 @@ body {
 #About {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 #About .about-title {
   font-size: 2.5rem;
@@ -154,9 +194,6 @@ body {
 }
 #Products .title-products-cont {
   width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 100px;
 }
 #Products .title-products-cont .products-title {
@@ -168,9 +205,6 @@ body {
 
 .categorias {
   width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2.25rem;
 }
 .categorias h2 {
@@ -183,10 +217,7 @@ body {
 
 .categorias-container {
   width: 90%;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   margin-top: 40px;
   gap: 20px;
 }
@@ -243,9 +274,6 @@ body {
 #Torres .products-container,
 #Vga .products-container,
 #Screen .products-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -258,11 +286,8 @@ body {
 #Torres .products-container .card,
 #Vga .products-container .card,
 #Screen .products-container .card {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 80px;
   gap: 10px;
   max-width: 20rem;
@@ -333,9 +358,6 @@ body {
 #Torres .products-container .card .card-btn,
 #Vga .products-container .card .card-btn,
 #Screen .products-container .card .card-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 1.87rem;
   background-color: #ff4500;
@@ -350,12 +372,12 @@ body {
 
 /*  Servicio Técnico(soporte) */
 #Service {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   margin-top: 40px;
   gap: 30px;
   margin-top: 0;
@@ -368,11 +390,12 @@ body {
   margin-top: 150px;
 }
 #Service .cont-services {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
+  align-content: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   gap: 8px;
 }
 #Service .cont-services .cont-service {
@@ -380,6 +403,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   max-width: 20rem;
 }
 #Service .cont-services .cont-service .service-text {
@@ -390,10 +414,6 @@ body {
   margin-top: 30px;
 }
 #Service .cont-services .cont-service .service-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 1.37rem;
   background-color: transparent;
   color: #fff;
@@ -405,9 +425,6 @@ body {
   padding: 5px 5px;
 }
 #Service .cont-services .cont-service .icon-service { /*icono de los servicios*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 6.25rem;
   text-align: center;
   margin-bottom: 20px;
@@ -420,11 +437,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 70px;
   max-width: 100%;
   background-color: transparent;
   color: #fff;
-  flex-wrap: wrap;
   gap: 30px;
   margin-top: 0px;
 }
@@ -436,16 +453,10 @@ body {
   color: #7fff00;
 }
 #Contact .info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 30px;
 }
 #Contact .info-container .contact-info-container { /*contenedor de todo mi info, menos el "contacto(H1)"*/
-  display: flex;
-  justify-content: center;
   gap: 80px;
-  flex-wrap: wrap;
 }
 #Contact .info-container .contact-info-container .info-column {
   background-color: black;

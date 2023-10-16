@@ -90,7 +90,7 @@
       width: 50%;
       height: calc(80vh - 150px);
       padding: 0 65px;
-      background-color: transparent;
+      background-color:  map-get($colores,sextario);
       position: absolute;
       top: 150px;
       flex-direction: column;
@@ -164,7 +164,7 @@
       font-size: 1.12rem;
     }
     .cont-services {
-      max-width: 100%;
+      max-width: map-get($porcentajes,fase10);
       @include flex(flex,center,center);
       flex-wrap: wrap;
       flex-direction: column;
@@ -291,8 +291,8 @@
       margin: 10px 0;
       border-radius: 5px;
       box-shadow: 2px 2px 2px 1px orangered;
-      background-color: transparent;
-      color: #fff;
+      background-color: map-get($colores,sextario);
+      color: $color-tipografia;
       font-size: 1.37rem;
       font-weight: 400;
     }

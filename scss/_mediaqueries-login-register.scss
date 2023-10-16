@@ -2,12 +2,12 @@
 /* hasta 1200px  */
 @media (max-width: 1200px) {
     .container_login {
-      max-width: 100%;
+      max-width: map-get($porcentajes,fase10);
       @include flex(block,center,center);
       flex-wrap: wrap;
     }
     .form {
-      max-width: 70%;
+      max-width: map-get($porcentajes,fase7);
       position: relative;
       top: 16.12rem;
       @include flex(flex,center,center);
@@ -24,7 +24,7 @@
   /* 576px */
   @media (max-width: 576px) {
     .container_login {
-      max-width: 100%;
+      max-width: map-get($porcentajes,fase10);
       @include flex(block,center,center);
       flex-wrap: wrap;
     }
@@ -51,7 +51,7 @@
       height: 7.5rem;
     }
     .container {
-      max-width: 100%;
+      max-width: map-get($porcentajes,fase10);
       @include flex(block,left,center);
       flex-wrap: wrap;
     }

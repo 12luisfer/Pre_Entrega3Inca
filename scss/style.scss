@@ -1,6 +1,7 @@
-@import'utilities/variables' ;
+@import'utilities/variables';
 @import'utilities/maps';
 @import'utilities/mixin';
+@import'utilities/extend';
 @import'base/generales';
 @import'layout/header';
 @import'views/inicio';
@@ -9,7 +10,7 @@
 @import'views/soporte';
 @import'views/contacto';
 @import'layout/footer';
-@import'components/menu-hamburguesa' ;
+@import'components/menu-hamburguesa';
 @import'components/carrito';
 @import'components/animacion';
 @import'mediaqueries';

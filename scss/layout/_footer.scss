@@ -1,7 +1,7 @@
 /*footer*/
 .footer {
   @include flex(flex,space-around,center);
-  width: 100%;
+  width: map-get($porcentajes,fase10);
   margin-top: 480px;
   }
   

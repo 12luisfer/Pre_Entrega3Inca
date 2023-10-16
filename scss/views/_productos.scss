@@ -1,6 +1,6 @@
 /*  Productos */
 #Products {
-    width: 100%;
+    width: map-get($porcentajes,fase10);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -8,10 +8,8 @@
     font-family: "Nunito", sans-serif;
 
     .title-products-cont {
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: map-get($porcentajes,fase9);
+      @extend%flex-center;
       margin-top: 100px;
       .products-title {
         font-size: 2.25rem;
@@ -24,9 +22,7 @@
   }
   .categorias {
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend%flex-center;
     font-size: 2.25rem;
     h2 {
       font-size: 2.25rem;
@@ -37,13 +33,10 @@
       
     }
   }
-
   .categorias-container{
-    width: 90%;
-    display: flex;
+    width: map-get($porcentajes,fase9);
+    @extend%flex-center;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin-top: 40px;
     gap: 20px;
     a {
@@ -54,7 +47,7 @@
       border-radius: 10px;
       color: $color-tipografia;
       cursor: pointer;
-      text-decoration: none;
+      text-decoration:  $decoracion;
       text-align: center;
     }
   }
@@ -83,17 +76,13 @@
       color: map-get($colores,quinario);
     }
     .products-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @extend%flex-center;
       flex-wrap: wrap;
       margin-top: 40px;
       .card {
-        display: flex;
+        @extend%flex-center;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 0 80px;
         gap: 10px;
         max-width: 20rem;
@@ -124,9 +113,7 @@
           color: map-get($colores,primario);
         }
         .card-btn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @extend%flex-center;
           text-align: center;
           font-size: 1.87rem;
           background-color: map-get($colores,cuartenario);
