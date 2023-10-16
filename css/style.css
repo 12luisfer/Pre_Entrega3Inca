@@ -54,7 +54,7 @@
 }
 
 body {
-  background-image: url("../../assets/backgrounds/background-index.webp");
+  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
@@ -984,7 +984,7 @@ body {
 .body_login {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  background-image: url("../../assets/backgrounds/fondo-login-register.webp");
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
   background-size: cover;
   background-attachment: fixed;
 }
