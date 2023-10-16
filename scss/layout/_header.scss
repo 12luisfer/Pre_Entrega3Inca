@@ -4,58 +4,48 @@
     position: fixed;
     width: 100%;
     height: 9.37rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000e6;
+    @include flex(flex,space-between,center);
+    background-color: map-get($colores,terciario);
     .logo {
       width: 11.25rem;
       height: 9.37rem;
     }
-    .navbar {           /*navegador de la tienda/ el contenedor */
+    .navbar {  /*navegador de la tienda/ el contenedor */
       width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       font-family: "Nunito", sans-serif;
       .navbar-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex,center,center);
         margin: 5px;
         gap: 15px;
-      .link a {                 /*links de mi navegador color*/
+      .link a {  /*links de mi navegador color*/
       font-size: 1.5rem;
       font-weight: bold;
-      color: #7fff00;
+      color: map-get($colores,secundario);
       text-align: center;
+      text-decoration: none;
     }
       }
     }
   }
-  .btn {
-    background-color: transparent;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: chartreuse;
-    margin: 0 15px;
-    
+
+  .cont-btn{
+    background-color:map-get($colores,sextario);
+    .login { /*mi login estilo del link*/
+      font-size: 1.56rem;
+      color:map-get($colores,primario);
+      background-color: map-get($colores,sextario);
+      text-decoration: none;
+    }
   }
-  /*mi login estilo del link*/
-  .login {
-    font-size: 1.56rem;
-    color: chartreuse;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  /*mis iconos de carrito y login(la personita)*/
-  .icon {
+  .icon { /*mis iconos de carrito y login(la personita)*/
     margin: 0 30px;
-    background-color: transparent;
-    color: chartreuse;
+    background-color:map-get($colores,sextario);
+    color: $color-iconos;
     font-size: 1.56rem;
     cursor: pointer;
   }
+
   /* efecto blur de mi menu hamburguesa, las secciones */
   .overlay {
     position: absolute;
@@ -64,7 +54,7 @@
     height: 100vh;
     width: 300vh;
     z-index: 1;
-    background: rgb(0, 0, 0, 0.6);
+    background: map-get($colores,terciario);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     display: none;

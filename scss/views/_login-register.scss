@@ -1,73 +1,61 @@
                   /*login y registrase*/
-
 .body_login {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  background: url(../assets/backgrounds/background-login.png);
+  background: url(../../assets/backgrounds/fondo-login-register.webp);
   background-size: cover;
   background-attachment: fixed;
   }
-.header_login {
+.header_login {         /*boton "volver"*/      
   width: 100%;
+  @include flex(flex,space-between,center);
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 1.12rem;
   .logo_login {
     width: 11.25rem;
     height: 9.37rem;
     }
    nav{
-    background-color: transparent;
+    background-color:map-get($colores,sextario);
     .volver{
       margin-top: 24px;
-      border: 2px solid deeppink;
-      box-shadow: 0 10px 20px 0 deepskyblue;
+      border: 2px solid map-get($colores,login-registro);
+      box-shadow: 0 10px 20px 0 map-get($colores,quinario);
       text-decoration: none;
       font-size: 1.37rem;
       font-weight: bold;
-      color: deepskyblue;
+      color: map-get($colores,quinario);
       }
-   } 
+    } 
   }
-
-  .form {
+  /*todo el formulario*/
+  .form {  
     max-width: 100%;
     position: relative;
     top: 16.12rem;
-    display: flex;
+    @include flex(flex,center,center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     .h1_principal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: deeppink;
+      @include flex(flex,space-between,top);
+      color: map-get($colores,login-registro);
       font-size: 2.5rem;
     }
     .container_login {
       max-width: 100%;
-      display: block;
-      justify-content: center;
-      align-items: center;
+      @include flex(block,space-between,center);
       flex-wrap: wrap;
       .input-cont {
         margin-bottom: 15px;
-        border: 2px solid deepskyblue;
+        border: 2px solid map-get($colores,quinario);
         border-radius: 5px;
-        box-shadow: 0 5px 20px 0 deepskyblue;
+        box-shadow: 0 5px 20px 0 map-get($colores,quinario);
         input[type="text"],
         input[type="password"],
         input[type="email"] {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flex(flex,center,center);
           background-color: transparent;
-          color: #fff;
+          color: $color-tipografia;
           font-size: 1.12rem;
           text-align: center;
           max-width: 100%;
@@ -77,46 +65,43 @@
       }
       }
     }
-
 input[type="submit"] {
-  background-color: transparent;
-  color: deeppink;
+  background-color:map-get($colores,sextario);
+  color: map-get($colores,login-registro);
   font-size: 1.12rem;
   text-align: center;
   border: none;
   margin: 5px 180px;
   padding: 20px;
-  border: 2px solid deepskyblue;
+  border: 2px solid map-get($colores,quinario);
   border-radius: 8px;
-  box-shadow: 0 5px 20px 0 deepskyblue;
+  box-shadow: 0 5px 20px 0 map-get($colores,quinario);
   }
 .span_login {
-  display: flex;
-  justify-content: left;
+  @include flex(flex,left,center);
   margin-top: 20.5px;
   padding: 5px;
   font-size: 1.37rem;
   font-weight: 600;
   font-family: "Monomaniac One", sans-serif;
-  color: deeppink;
-  box-shadow: 0 10px 20px 0 deeppink;
+  color:map-get($colores,login-registro);
+  box-shadow: 0 10px 20px 0 map-get($colores,login-registro);
 }
 .link_login {
   margin-top: 24px;
-  border: 2px solid deeppink;
-  box-shadow: 0 10px 20px 0 deepskyblue;
+  border: 2px solid map-get($colores,login-registro);
+  box-shadow: 0 10px 20px 0 map-get($colores,quinario);
   text-decoration: none;
   font-size: 1.37rem;
   font-weight: bold;
-  color: deepskyblue;
-
+  color: map-get($colores,quinario);
   }
 .link_login:hover {
-    background: red;
+    color: map-get($colores,primario);
   }
 input[type="submit"]:hover {
-  background: #fff;
+  background: $color-tipografia;
   }
-                      
+
 
 

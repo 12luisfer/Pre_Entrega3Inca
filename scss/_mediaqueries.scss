@@ -1,10 +1,8 @@
 /* Responsive Design*/
-
 /* 1200px */
 @media (max-width: 1200px) {
     /* animacion translate para cuando se utilice el check del cart-toggle */
     /* creo la animación */
-  
     @keyframes Translate {
       0% {
         transform: translateX(0);
@@ -13,96 +11,76 @@
         transform: translateX(50%);
       }
     }
-  
     /* Uso la animación  */
     #cart-toggle:checked + .cart {
       animation: Translate 2s;
     }
-  
   .icon {  /*acomodo mi logo de login*/
     margin: 0 3px;
-    background-color: transparent;
-    color: chartreuse;
+    background-color:map-get($colores,sextario);
+    color: map-get($colores,primario);
     font-size: 1.56rem;
     cursor: pointer;
   }
-  
-  
     .card-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       width: 11rem;
     }
     .cart-item img {
       width: 5rem;
     }
     .quantity-handler { /*contenedor del + y -*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       padding: 2px 5px;
       margin: 10px 0;
       border-radius: 5px;
-      box-shadow: 2px 2px 2px 1px orangered;
-      color: #fff;
+      box-shadow: 2px 2px 2px 1px map-get($colores,cuartenario);
+      color:$color-tipografia;
       font-weight: 400;
     }
     .item-quantity {      /*1 del carrito*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
+      @include flex(flex,center,center);
+      color: $color-tipografia;
       font-size: 1rem;
     }
     .up {             /*+ del carrito*/
       font-size: 1rem;
-      background-color: transparent;
-      border: 1px solid orangered;
+      background-color: map-get($colores,sextario);
+      border: 1px solid map-get($colores,cuartenario);
     }
-  
     .down {  /**/
       font-size: 1rem;
-      background-color: transparent;
-      border: 1px solid orangered;
+      background-color: map-get($colores,sextario);
+      border: 1px solid map-get($colores,cuartenario);
     }
     .divider {
       margin-top: 20px;
-      border: 0.5px solid orangered;
+      border: 0.5px solid map-get($colores,cuartenario);
     }
-  
     .cart-total {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      @include flex(flex,space-between,center)
     }
-  
     .cart-total p {   /*texto"total:"*/
-      color: #fff;
+      color: $color-tipografia;
       font-weight: 700;
     }
-  
     .cart-total span {  /*el precio total*/
-      color: chartreuse;
+      color: map-get($colores,primario);
       font-weight: 400;
       font-size: 18px;
     }
     .btn-add {  /*boton comprar*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       padding: 2px 5px;
       margin: 10px 0;
       border-radius: 50px;
-      box-shadow: 2px 2px 2px 1px orangered;
+      box-shadow: 2px 2px 2px 1px map-get($colores,primario);
       font-size: 1.37rem;
       font-weight: 400;
-      background-color: transparent;
-      color: #fff;
+      background-color: map-get($colores,sextario);
+      color: $color-tipografia;
     }
   }
-  
-  
   /* 992px */
   @media (max-width: 992px) {
     .menu-label i {
@@ -135,7 +113,6 @@
         transform: translateX(50%);
       }
     }
-  
     /* Uso la animación  */
     #menu-toggle:checked + .navbar-list {
       animation: TranslateX 2s;
@@ -151,12 +128,10 @@
         transform: translateX(50%);
       }
     }
-  
     /* Uso la animación  */
     #cart-toggle:checked + .cart {
       animation: TranslateX 2s;
     }
-  
     .card-img {
       width: 10rem;
     }
@@ -175,7 +150,6 @@
     .icon-service {
       font-size: 4rem;
     }
-  
     .mapa iframe {
       height: 350px;
     }
@@ -191,14 +165,11 @@
     }
     .cont-services {
       max-width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       flex-wrap: wrap;
       flex-direction: column;
     }
   }
-  
   /* 768px */
   @media (max-width: 768px) {
     /*  logo */
@@ -234,7 +205,6 @@
     .title-cont {
       font-size: 1.67rem;
     }
-  
     .item-price {
       font-size: 1.2rem;
     }
@@ -245,16 +215,13 @@
     .cont-services {
       gap: 12px;
     }
-  
     .service-title {
       font-size: 1.37rem;
     }
-  
     /* seccion contacto */
     #Contact h2 {
       font-size: 2.25rem;
     }
-  
     .info-column p,
     .info-column a {
       font-size: 1.25rem;
@@ -266,7 +233,6 @@
       font-size: 1.12rem;
     }
   }
-  
   /* desde 320px  hasta 475px */
   @media (min-width: 320px) and (max-width: 475px) {
     /* items del carrito */
@@ -302,33 +268,25 @@
       margin-top: 10px;
       border: 0.5px solid orangered;
     }
-  
     .cart-total {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
+      @include flex(flex,space-around,baseline);
+
       margin: 5px;
       gap: 5px;
     }
-  
     .cart-total p {
       color: #fff;
       font-size: 1.12rem;
       font-weight: 700;
     }
-  
     .cart-total span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: chartreuse;
+      @include flex(flex,center,center);
+      color:$color-tipografia;
       font-weight: 600;
       font-size: 1.12rem;
     }
     .btn-add {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       padding: 2px 5px;
       margin: 10px 0;
       border-radius: 5px;
@@ -338,7 +296,6 @@
       font-size: 1.37rem;
       font-weight: 400;
     }
-  
     .link {
       width: 6rem;
       margin: 10px 10px;
@@ -359,8 +316,8 @@
     .login {
       font-size: 1rem;
       text-align: center;
-      background-color: transparent;
-      color: chartreuse;
+      background-color: map-get($colores,sextario);
+      color: map-get($colores,primario);
       text-align: center;
     }
     .icon {
@@ -406,9 +363,7 @@
     .title-cont {
       font-size: 1.12rem;
     }
-  
     /* sección soporte */
-  
     #Service {
       margin-top: 20px;
     }

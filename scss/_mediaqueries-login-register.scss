@@ -1,65 +1,49 @@
 /* Responsive  */
-
-/* 1200px */
+/* hasta 1200px  */
 @media (max-width: 1200px) {
     .container_login {
       max-width: 100%;
-      display: block;
-      justify-content: center;
-      align-items: center;
+      @include flex(block,center,center);
       flex-wrap: wrap;
     }
-  
     .form {
       max-width: 70%;
       position: relative;
       top: 16.12rem;
-      display: flex;
+      @include flex(flex,center,center);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 20px;
     }
     .h1_principal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       margin: 10px;
-      color: deeppink;
+      color: map-get($colores,login-registro);
       font-size: 2.5rem;
     }
   }
-  
   /* 576px */
   @media (max-width: 576px) {
     .container_login {
       max-width: 100%;
-      display: block;
-      justify-content: center;
-      align-items: center;
+      @include flex(block,center,center);
       flex-wrap: wrap;
     }
   
     .form {
       max-width: 55%;
       top: 9.37rem;
-      display: flex;
+      @include flex(flex,center,center);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 20px;
     }
     .h1_principal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       text-align: center;
       margin: 20px;
-      color: deeppink;
+      color: map-get($colores,login-registro);
       font-size: 2.5rem;
     }
   }
-  
   /* desde 320px hasta 575px */
   @media (min-width: 320px) and (max-width: 575px) {
     .logo_login {
@@ -68,41 +52,33 @@
     }
     .container {
       max-width: 100%;
-      display: block;
-      justify-content: center;
-      align-items: center;
+      @include flex(block,left,center);
       flex-wrap: wrap;
     }
-  
     .form {
       max-width: 70%;
       top: 9.37rem;
       left: 3rem;
-      display: flex;
+      @include flex(flex,center,center);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 20px;
     }
     .h1_principal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex,center,center);
       text-align: center;
       margin: 20px;
-      color: deeppink;
+      color: map-get($colores,login-registro);
       font-size: 2.5rem;
     }
     .span_login {
-      display: flex;
-      justify-content: left;
+      @include flex(flex,left,center);
       margin-top: 14.5px;
       padding: 0 65px;
       font-size: 1.12rem;
       font-weight: 600;
       font-family: "Monomaniac One", sans-serif;
-      color: deeppink;
-      box-shadow: 0 10px 20px 0 deeppink;
+      color: map-get($colores,login-registro);
+      box-shadow: 0 10px 20px 0 map-get($colores,login-registro);
     }
   }
   

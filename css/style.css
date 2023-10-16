@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*color tipografia contenidos*/
+/*color de mis iconos/todos*/
+/*bordes decontenido*/
+/*map-get($colores,secundario)*/
+/*      @include flex(flex,center,center);*/
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
 /* Reset de estilos */
 * {
@@ -9,7 +14,6 @@
 }
 
 body {
-  font-family: "Monomaniac One", sans-serif;
   background: url(../assets/backgrounds/background-index.png);
   background-size: cover;
   background-attachment: fixed;
@@ -25,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9019607843);
+  background-color: rgba(0, 0, 0, 0.7333333333);
 }
 .header .logo {
   width: 11.25rem;
@@ -48,31 +52,25 @@ body {
 .header .navbar .navbar-list .link a { /*links de mi navegador color*/
   font-size: 1.5rem;
   font-weight: bold;
-  color: #7fff00;
+  color: #f30f9c;
   text-align: center;
+  text-decoration: none;
 }
 
-.btn {
+.cont-btn {
   background-color: transparent;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: chartreuse;
-  margin: 0 15px;
 }
-
-/*mi login estilo del link*/
-.login {
+.cont-btn .login { /*mi login estilo del link*/
   font-size: 1.56rem;
-  color: chartreuse;
+  color: #7fff00;
   background-color: transparent;
   text-decoration: none;
 }
 
-/*mis iconos de carrito y login(la personita)*/
-.icon {
+.icon { /*mis iconos de carrito y login(la personita)*/
   margin: 0 30px;
   background-color: transparent;
-  color: chartreuse;
+  color: rgb(255, 251, 0);
   font-size: 1.56rem;
   cursor: pointer;
 }
@@ -85,7 +83,7 @@ body {
   height: 100vh;
   width: 300vh;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7333333333);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: none;
@@ -113,7 +111,7 @@ body {
   text-align: center;
   font-size: 3.12rem;
   font-weight: 700;
-  color: chartreuse;
+  color: #7fff00;
   margin-top: 180px;
 }
 #Hero .hero-text {
@@ -135,7 +133,7 @@ body {
 #About .about-title {
   font-size: 2.5rem;
   text-align: center;
-  color: chartreuse;
+  color: #7fff00;
   margin-top: 150px;
 }
 #About .about-text {
@@ -152,6 +150,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0px;
+  font-family: "Nunito", sans-serif;
 }
 #Products .title-products-cont {
   width: 90%;
@@ -163,7 +162,7 @@ body {
 #Products .title-products-cont .products-title {
   font-size: 2.25rem;
   text-align: center;
-  color: white;
+  color: #7fff00;
   margin-top: 50px;
 }
 
@@ -177,7 +176,7 @@ body {
 .categorias h2 {
   font-size: 2.25rem;
   background-color: transparent;
-  color: orangered;
+  color: #ff4500;
   text-align: center;
   margin: 40px;
 }
@@ -195,7 +194,7 @@ body {
   font-size: 1.25rem;
   display: inline-block;
   padding: 10px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7333333333);
   border-radius: 10px;
   color: #fff;
   cursor: pointer;
@@ -233,7 +232,7 @@ body {
   font-size: 1.87rem;
   font-weight: 800;
   background-color: transparent;
-  color: #fff;
+  color: rgba(0, 213, 255, 0.8941176471);
 }
 #Mother .products-container,
 #Micros .products-container,
@@ -294,6 +293,7 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
   color: #fff;
+  border: 5px red solid;
 }
 #Mother .products-container .card .card-text,
 #Micros .products-container .card .card-text,
@@ -322,7 +322,7 @@ body {
   text-align: center;
   font-size: 1.37rem;
   font-weight: 800;
-  color: chartreuse;
+  color: #7fff00;
 }
 #Mother .products-container .card .card-btn,
 #Micros .products-container .card .card-btn,
@@ -338,7 +338,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 1.87rem;
-  background-color: orangered;
+  background-color: #ff4500;
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
@@ -364,7 +364,7 @@ body {
   max-width: 100%;
   text-align: center;
   font-size: 2.25rem;
-  color: #fff;
+  color: #7fff00;
   margin-top: 150px;
 }
 #Service .cont-services {
@@ -398,9 +398,9 @@ body {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 5px red solid;
   border-radius: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(235, 227, 227, 0.7);
+  box-shadow: 2px 2px 2px 1px #fff;
   margin: 15px 15px;
   padding: 5px 5px;
 }
@@ -412,16 +412,16 @@ body {
   text-align: center;
   margin-bottom: 20px;
   width: 12.5rem;
-  color: chartreuse;
+  color: rgb(255, 251, 0);
 }
 
 /* Contacto */
 #Contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 70px;
   max-width: 100%;
-  justify-content: center;
   background-color: transparent;
   color: #fff;
   flex-wrap: wrap;
@@ -433,6 +433,7 @@ body {
   font-size: 2.25rem;
   font-weight: 900;
   margin-top: 150px;
+  color: #7fff00;
 }
 #Contact .info-container {
   display: flex;
@@ -447,7 +448,8 @@ body {
   flex-wrap: wrap;
 }
 #Contact .info-container .contact-info-container .info-column {
-  background-color: rgba(6, 6, 6, 0.99);
+  background-color: black;
+  border: 5px red solid;
 }
 #Contact .info-container .contact-info-container .info-column h3 {
   display: flex;
@@ -462,23 +464,23 @@ body {
   gap: 10px;
   font-size: 1.5rem;
   text-decoration: none;
-  color: chartreuse;
+  color: #fff;
   margin-bottom: 15px;
 }
 #Contact .info-container .contact-info-container .info-column .icon-info {
   font-size: 1.87rem;
   text-decoration: none;
-  color: chartreuse;
+  color: rgb(255, 251, 0);
   margin-bottom: 15px;
 }
-
-.mapa {
+#Contact .mapa {
   width: 40%;
   margin: 0 auto;
   display: block;
   border-radius: 8px;
+  border: 5px red solid;
 }
-.mapa iframe {
+#Contact .mapa iframe {
   width: 100%;
   height: 200px;
   border-radius: 10px;
@@ -486,10 +488,10 @@ body {
 
 /*footer*/
 .footer {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   margin-top: 480px;
 }
 
@@ -601,7 +603,7 @@ body {
   .icon { /*acomodo mi logo de login*/
     margin: 0 3px;
     background-color: transparent;
-    color: chartreuse;
+    color: #7fff00;
     font-size: 1.56rem;
     cursor: pointer;
   }
@@ -621,7 +623,7 @@ body {
     padding: 2px 5px;
     margin: 10px 0;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px orangered;
+    box-shadow: 2px 2px 2px 1px #ff4500;
     color: #fff;
     font-weight: 400;
   }
@@ -635,28 +637,28 @@ body {
   .up { /*+ del carrito*/
     font-size: 1rem;
     background-color: transparent;
-    border: 1px solid orangered;
+    border: 1px solid #ff4500;
   }
   .down { /**/
     font-size: 1rem;
     background-color: transparent;
-    border: 1px solid orangered;
+    border: 1px solid #ff4500;
   }
   .divider {
     margin-top: 20px;
-    border: 0.5px solid orangered;
+    border: 0.5px solid #ff4500;
   }
   .cart-total {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
   .cart-total p { /*texto"total:"*/
     color: #fff;
     font-weight: 700;
   }
   .cart-total span { /*el precio total*/
-    color: chartreuse;
+    color: #7fff00;
     font-weight: 400;
     font-size: 18px;
   }
@@ -667,7 +669,7 @@ body {
     padding: 2px 5px;
     margin: 10px 0;
     border-radius: 50px;
-    box-shadow: 2px 2px 2px 1px orangered;
+    box-shadow: 2px 2px 2px 1px #7fff00;
     font-size: 1.37rem;
     font-weight: 400;
     background-color: transparent;
@@ -878,7 +880,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: chartreuse;
+    color: #fff;
     font-weight: 600;
     font-size: 1.12rem;
   }
@@ -916,7 +918,7 @@ body {
     font-size: 1rem;
     text-align: center;
     background-color: transparent;
-    color: chartreuse;
+    color: #7fff00;
     text-align: center;
   }
   .icon {
@@ -971,17 +973,17 @@ body {
 .body_login {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  background: url(../assets/backgrounds/background-login.png);
+  background: url(../../assets/backgrounds/fondo-login-register.webp);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.header_login {
+.header_login { /*boton "volver"*/
   width: 100%;
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   margin-top: 1.12rem;
 }
 .header_login .logo_login {
@@ -993,44 +995,44 @@ body {
 }
 .header_login nav .volver {
   margin-top: 24px;
-  border: 2px solid deeppink;
-  box-shadow: 0 10px 20px 0 deepskyblue;
+  border: 2px solid #ff1493;
+  box-shadow: 0 10px 20px 0 rgba(0, 213, 255, 0.8941176471);
   text-decoration: none;
   font-size: 1.37rem;
   font-weight: bold;
-  color: deepskyblue;
+  color: rgba(0, 213, 255, 0.8941176471);
 }
 
+/*todo el formulario*/
 .form {
   max-width: 100%;
   position: relative;
   top: 16.12rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
 .form .h1_principal {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: deeppink;
+  justify-content: space-between;
+  align-items: top;
+  color: #ff1493;
   font-size: 2.5rem;
 }
 .form .container_login {
   max-width: 100%;
   display: block;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .form .container_login .input-cont {
   margin-bottom: 15px;
-  border: 2px solid deepskyblue;
+  border: 2px solid rgba(0, 213, 255, 0.8941176471);
   border-radius: 5px;
-  box-shadow: 0 5px 20px 0 deepskyblue;
+  box-shadow: 0 5px 20px 0 rgba(0, 213, 255, 0.8941176471);
 }
 .form .container_login .input-cont input[type=text],
 .form .container_login .input-cont input[type=password],
@@ -1049,41 +1051,42 @@ body {
 
 input[type=submit] {
   background-color: transparent;
-  color: deeppink;
+  color: #ff1493;
   font-size: 1.12rem;
   text-align: center;
   border: none;
   margin: 5px 180px;
   padding: 20px;
-  border: 2px solid deepskyblue;
+  border: 2px solid rgba(0, 213, 255, 0.8941176471);
   border-radius: 8px;
-  box-shadow: 0 5px 20px 0 deepskyblue;
+  box-shadow: 0 5px 20px 0 rgba(0, 213, 255, 0.8941176471);
 }
 
 .span_login {
   display: flex;
   justify-content: left;
+  align-items: center;
   margin-top: 20.5px;
   padding: 5px;
   font-size: 1.37rem;
   font-weight: 600;
   font-family: "Monomaniac One", sans-serif;
-  color: deeppink;
-  box-shadow: 0 10px 20px 0 deeppink;
+  color: #ff1493;
+  box-shadow: 0 10px 20px 0 #ff1493;
 }
 
 .link_login {
   margin-top: 24px;
-  border: 2px solid deeppink;
-  box-shadow: 0 10px 20px 0 deepskyblue;
+  border: 2px solid #ff1493;
+  box-shadow: 0 10px 20px 0 rgba(0, 213, 255, 0.8941176471);
   text-decoration: none;
   font-size: 1.37rem;
   font-weight: bold;
-  color: deepskyblue;
+  color: rgba(0, 213, 255, 0.8941176471);
 }
 
 .link_login:hover {
-  background: red;
+  color: #7fff00;
 }
 
 input[type=submit]:hover {
@@ -1091,7 +1094,7 @@ input[type=submit]:hover {
 }
 
 /* Responsive  */
-/* 1200px */
+/* hasta 1200px  */
 @media (max-width: 1200px) {
   .container_login {
     max-width: 100%;
@@ -1105,9 +1108,9 @@ input[type=submit]:hover {
     position: relative;
     top: 16.12rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
   }
   .h1_principal {
@@ -1115,7 +1118,7 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    color: deeppink;
+    color: #ff1493;
     font-size: 2.5rem;
   }
 }
@@ -1132,9 +1135,9 @@ input[type=submit]:hover {
     max-width: 55%;
     top: 9.37rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
   }
   .h1_principal {
@@ -1143,7 +1146,7 @@ input[type=submit]:hover {
     align-items: center;
     text-align: center;
     margin: 20px;
-    color: deeppink;
+    color: #ff1493;
     font-size: 2.5rem;
   }
 }
@@ -1156,7 +1159,7 @@ input[type=submit]:hover {
   .container {
     max-width: 100%;
     display: block;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -1165,9 +1168,9 @@ input[type=submit]:hover {
     top: 9.37rem;
     left: 3rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
   }
   .h1_principal {
@@ -1176,19 +1179,20 @@ input[type=submit]:hover {
     align-items: center;
     text-align: center;
     margin: 20px;
-    color: deeppink;
+    color: #ff1493;
     font-size: 2.5rem;
   }
   .span_login {
     display: flex;
     justify-content: left;
+    align-items: center;
     margin-top: 14.5px;
     padding: 0 65px;
     font-size: 1.12rem;
     font-weight: 600;
     font-family: "Monomaniac One", sans-serif;
-    color: deeppink;
-    box-shadow: 0 10px 20px 0 deeppink;
+    color: #ff1493;
+    box-shadow: 0 10px 20px 0 #ff1493;
   }
 }
 

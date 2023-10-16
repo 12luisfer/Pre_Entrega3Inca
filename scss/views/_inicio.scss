@@ -10,13 +10,13 @@
         text-align: center;
         font-size: 3.12rem;
         font-weight: 700;
-        color: chartreuse;
+        color:map-get($colores,primario);
         margin-top: 180px;
     }
     .hero-text {
         text-align: center;
         font-size: 1.87rem;
-        color: #fff;
+        color: $color-tipografia;
         margin-top: 20px;
     }
 }

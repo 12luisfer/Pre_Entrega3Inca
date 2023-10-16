@@ -1,9 +1,7 @@
 /*footer*/
 .footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 480px;
+  @include flex(flex,space-around,center);
+  width: 100%;
+  margin-top: 480px;
   }
   
