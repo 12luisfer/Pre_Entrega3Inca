@@ -54,7 +54,7 @@
 }
 
 body {
-  background: url(../../assets/backgrounds/background-index.webp);
+  background-image: url("../../assets/backgrounds/background-index.webp");
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
@@ -984,7 +984,7 @@ body {
 .body_login {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  background: url(../../assets/backgrounds/fondo-login-register.webp);
+  background-image: url("../../assets/backgrounds/fondo-login-register.webp");
   background-size: cover;
   background-attachment: fixed;
 }
